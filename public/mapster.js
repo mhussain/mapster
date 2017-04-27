@@ -11,7 +11,7 @@ function mapsterProvider(Private) {
   return new TemplateVisType({
     name: 'mapster',
     title: 'Mapster',
-    description: 'MAPSTER MUCH PIEW MUCH WOW',
+    description: 'Live Events Map',
     icon: 'fa-globe',
     template: require('plugins/mapster/mapster.html'),
     params: {

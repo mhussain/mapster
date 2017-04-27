@@ -134,6 +134,12 @@ var Map = function () {
         var targetCoords = getCoords(config.TargetCoords);
       }
       if (ObjectBox !== null) {
+        var regions = [
+          [103.7555512, 1.3457398],
+          [8.4964822, 50.1213479],
+          [-122.7807647, 44.1239101]
+        ];
+        var targetCoords = regions[Math.floor(Math.random() * 3) + 0];
         var route = svg.append("path")
           .datum({type: "LineString", coordinates: [coords, targetCoords]})
           .style("stroke", color)
@@ -200,6 +206,12 @@ var Map = function () {
       } else {
         var targetCoords = getCoords(config.TargetCoords);
       }
+      var regions = [
+        [103.7555512, 1.3457398],
+        [8.4964822, 50.1213479],
+        [-122.7807647, 44.1239101]
+      ];
+      var targetCoords = regions[Math.floor(Math.random() * 3) + 0];
       if (ObjectBox !== null) {
         var route = svg.append("path")
           .datum({type: "LineString", coordinates: [targetCoords, coords]})
